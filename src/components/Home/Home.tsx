@@ -20,11 +20,11 @@ import SecondLine from "/src/assets/icons/icon-minus.svg";
 import CurveTopRight from "/src/assets/patterns/pattern-curve-top-right.svg";
 import CurveTopLeft from "/src/assets/patterns/pattern-curve-top-left.svg";
 import Lines from "/src/assets/patterns/pattern-lines.svg";
-import { useState, useRef, MouseEventHandler } from "react";
+import { useState, useRef } from "react";
 
-function Home(props:{
-  isClicked:string;
-  setIsClicked:MouseEventHandler<HTMLButtonElement>;
+function Home(props: {
+  isClicked: boolean;
+  setIsClicked: (status: boolean) => undefined;
 }) {
   const [classChanger, setClassChanger] = useState<number | null>(1);
   const Positions = useRef<HTMLImageElement>(null);
@@ -86,7 +86,7 @@ function Home(props:{
 
   const handleChanger2 = () => {
     if (ChangeRefs.h1Changer.current) {
-      ChangeRefs.h1Changer.current.textContent = "Special Events"
+      ChangeRefs.h1Changer.current.textContent = "Special Events";
     }
     if (ChangeRefs.pChanger.current) {
       ChangeRefs.pChanger.current.textContent =
@@ -139,7 +139,10 @@ function Home(props:{
             the freshest produce from the comfort of our farmhouse.
           </p>
         </div>
-        <button onClick={props.setIsClicked} className={Styles.FirstButton}>
+        <button
+          onClick={props.setIsClicked(true)}
+          className={Styles.FirstButton}
+        >
           Book a Table
         </button>
       </div>
@@ -363,7 +366,7 @@ function Home(props:{
               memorable experience for all.
             </p>
             <button
-              onClick={props.setIsClicked}
+              onClick={props.setIsClicked(true)}
               className={Styles.SecondButton}
             >
               Book a Table
@@ -373,7 +376,10 @@ function Home(props:{
       </div>
       <div className={Styles.SixthDiv}>
         <h1 className={Styles.NinthTitle}>Ready to make a reservation?</h1>
-        <button onClick={props.setIsClicked} className={Styles.ThirdButton}>
+        <button
+          onClick={props.setIsClicked(true)}
+          className={Styles.ThirdButton}
+        >
           Book a Table
         </button>
       </div>

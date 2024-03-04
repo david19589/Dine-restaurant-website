@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Home isClicked={isClicked} setIsClicked={setIsClicked}/>
-      <Booking  isClicked={isClicked} setIsClicked={setIsClicked}/>
+      <Booking  isClicked={isClicked}/>
     </div>
   );
 }

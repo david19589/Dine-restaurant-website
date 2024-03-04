@@ -21,7 +21,7 @@ type FormData = {
 };
 
 function Booking(props:{
-  isClicked:string;
+  isClicked:boolean;
 }) {
   const [rotate, setRotate] = useState(false);
   const [quantity, setQuantity] = useState(4);
