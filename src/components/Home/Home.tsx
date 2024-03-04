@@ -24,7 +24,7 @@ import { useState, useRef } from "react";
 
 function Home(props: {
   isClicked: boolean;
-  setIsClicked: (status: boolean) => undefined;
+  setIsClicked: (status: boolean) => void;
 }) {
   const [classChanger, setClassChanger] = useState<number | null>(1);
   const Positions = useRef<HTMLImageElement>(null);
@@ -140,7 +140,7 @@ function Home(props: {
           </p>
         </div>
         <button
-          onClick={props.setIsClicked(true)}
+         onClick = {() => props.setIsClicked(true)}
           className={Styles.FirstButton}
         >
           Book a Table
@@ -366,7 +366,7 @@ function Home(props: {
               memorable experience for all.
             </p>
             <button
-              onClick={props.setIsClicked(true)}
+             onClick = {() => props.setIsClicked(true)}
               className={Styles.SecondButton}
             >
               Book a Table
@@ -377,7 +377,7 @@ function Home(props: {
       <div className={Styles.SixthDiv}>
         <h1 className={Styles.NinthTitle}>Ready to make a reservation?</h1>
         <button
-          onClick={props.setIsClicked(true)}
+         onClick = {() => props.setIsClicked(true)}
           className={Styles.ThirdButton}
         >
           Book a Table
