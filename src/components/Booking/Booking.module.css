@@ -1,0 +1,514 @@
+.mainDiv2 {
+  display: none;
+}
+.mainDiv2Active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upperDiv {
+  background-image: url(/src/assets/booking/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+  padding-bottom: 228px;
+  flex-direction: column;
+  align-items: center;
+}
+.Logo {
+  margin-bottom: 44px;
+}
+.FirstTitle {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.4px;
+  margin-bottom: 13px;
+  color: #fff;
+  text-align: center;
+  max-width: 240px;
+}
+.FirstP {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 19px;
+  max-width: 330px;
+  color: #fff;
+  text-align: center;
+}
+.FirstTitlePDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FirstButton {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  border: 0.5px solid #fff;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  outline: none;
+  padding: 25px 48px 23px 47px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.FirstButton:hover {
+  box-shadow: inset 300px 0 0 0 #fff;
+  color: #000;
+  transition: ease-out 0.4s;
+}
+.formDiv {
+  background-color: #fff;
+  padding: 34px 32px 32px 32px;
+  box-shadow: 0px 26px 65px -23px rgba(0, 0, 0, 0.26);
+  margin-top: -100px;
+  width: 70%;
+  margin-bottom: 86px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  margin-bottom: 34px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding-left: 10px;
+  outline: none;
+}
+::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.MMForm {
+  width: 63px;
+  margin-right: 19px;
+}
+.DDForm {
+  width: 63px;
+  margin-right: 18px;
+}
+.YYYYForm {
+  width: 63px;
+}
+.time {
+  display: flex;
+  flex-wrap: wrap;
+}
+.minutes {
+  width: 63px;
+  margin-right: 12px;
+}
+.hours {
+  width: 63px;
+  margin-right: 12px;
+}
+.dateLabel {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.timeLabel {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.AMAndPM {
+  height: 53px;
+  width: 88px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding-right: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  background-color: #fff;
+  margin-bottom: 34px;
+  cursor: pointer;
+  padding-left: 10px;
+  appearance: none;
+}
+.AMAndPM option {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 15px 25px 0px #3842553f;
+}
+.arrow {
+  height: 8px;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+.arrowRotate {
+  margin-top: 20px;
+  margin-left: -30px;
+  height: 8px;
+  transform: rotate(180deg);
+}
+.peopleCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #8e8e8e;
+  z-index: 0;
+}
+.minus {
+  margin-right: 66px;
+  width: 12px;
+  cursor: pointer;
+}
+.plus {
+  margin-left: 66px;
+  width: 12px;
+  cursor: pointer;
+}
+.people {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+.secondButton {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  border: 0.5px solid #000;
+  background-color: #000;
+  color: #fff;
+  outline: none;
+  padding: 19px 37.5px 18px 36.5px;
+  cursor: pointer;
+  max-width: 300px;
+  margin-top: 51px;
+  align-self: center;
+  transition-duration: 0.6s;
+}
+.redForm {
+  border-bottom: 1px solid red;
+}
+.redForm::placeholder {
+  color: red;
+}
+.secondButton:hover {
+  box-shadow: inset -300px 0 0 0 #fff;
+  color: #000;
+  transition: ease-out 0.4s;
+}
+.DDFormRed {
+  width: 63px;
+  margin-right: 18px;
+  border-bottom: 1px solid red;
+}
+.DDFormRed::placeholder {
+  color: red;
+}
+.MMFormRed {
+  width: 63px;
+  margin-right: 19px;
+  border-bottom: 1px solid red;
+}
+.MMFormRed::placeholder {
+  color: red;
+}
+.YYYYFormRed {
+  width: 63px;
+  border-bottom: 1px solid red;
+}
+.YYYYFormRed::placeholder {
+  color: red;
+}
+.minutesRed {
+  width: 63px;
+  margin-right: 12px;
+  border-bottom: 1px solid red;
+}
+.minutesRed::placeholder {
+  color: red;
+}
+.hoursRed {
+  width: 63px;
+  margin-right: 12px;
+  border-bottom: 1px solid red;
+}
+.hoursRed::placeholder {
+  color: red;
+}
+.error1 {
+  color: red;
+  position: absolute;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9.2px;
+  letter-spacing: -0.13px;
+  transform: translate(0px, 64px);
+}
+.error2 {
+  color: red;
+  position: absolute;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9.2px;
+  letter-spacing: -0.13px;
+  transform: translate(0px, 150px);
+}
+.error3 {
+  color: red;
+  position: absolute;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9.2px;
+  letter-spacing: -0.13px;
+  transform: translate(-92px, 64px);
+  max-width: 80px;
+}
+.error4 {
+  color: red;
+  position: absolute;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9.2px;
+  letter-spacing: -0.13px;
+  transform: translate(-90px, 64px);
+  max-width: 80px;
+}
+.error5 {
+  color: red;
+  position: absolute;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9.2px;
+  letter-spacing: -0.13px;
+  transform: translate(-70px, 64px);
+  width: 80px;
+}
+.error6 {
+  color: red;
+  position: absolute;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9.2px;
+  letter-spacing: -0.13px;
+  transform: translate(2px, 64px);
+  max-width: 80px;
+}
+.error7 {
+  color: red;
+  position: absolute;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9.2px;
+  letter-spacing: -0.13px;
+  transform: translate(90px, 64px);
+  max-width: 80px;
+}
+.SeventhDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 78px;
+  background-color: #000;
+  width: 100%;
+}
+.InfoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.SecondLogo {
+  margin-bottom: 42px;
+}
+.FirstSmallInfoDiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.FirstInfo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  max-width: 200px;
+  color: #fff;
+  text-align: center;
+}
+.SecondInfo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  max-width: 256px;
+  color: #fff;
+  text-align: center;
+}
+.SecondSmallInfoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.CurveBottomRight {
+  display: none;
+}
+.Lines {
+  display: none;
+}
+@media (min-width: 700px) {
+  .upperDiv {
+    background-image: url(/src/assets/booking/hero-bg-tablet.jpg);
+  }
+  .Logo {
+    margin-left: 39px;
+    align-self: flex-start;
+  }
+  .FirstTitle {
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -0.6px;
+    margin-bottom: 12px;
+  }
+  .FirstP {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 570px;
+    margin-bottom: 38px;
+    margin-top: 0px;
+  }
+  .FirstButton {
+    display: none;
+  }
+  .formDiv {
+    padding: 50px 48px 48px 48px;
+    margin: -230px 114px 120px 114px;
+    max-width: 540px;
+  }
+  .dateDiv {
+    display: flex;
+    align-items: baseline;
+  }
+  .dateLabel {
+    margin-right: 65px;
+  }
+  .timeDiv {
+    display: flex;
+    align-items: baseline;
+  }
+  .timeLabel {
+    margin-right: 65px;
+  }
+  .time {
+    display: flex;
+    flex-wrap: unset;
+  }
+  .secondButton {
+    padding: 19px 102px 17px 102px;
+    max-width: 444px;
+  }
+  .secondButton:hover {
+    box-shadow: inset -390px 0 0 0 #fff;
+  }
+  .minus {
+    margin-right: 142px;
+  }
+  .plus {
+    margin-left: 142px;
+  }
+  .SeventhDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 64px;
+    padding-bottom: 62px;
+  }
+  .InfoDiv {
+    display: block;
+  }
+  .FirstInfo {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+  .FirstSmallInfoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+  .SecondSmallInfoDiv {
+    display: flex;
+    align-items: flex-start;
+  }
+  .Lines {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .upperDiv {
+    background-image: url(/src/assets/booking/hero-bg-desktop.jpg);
+  }
+  .Logo {
+    margin-left: 167px;
+    margin-bottom: 153px;
+  }
+  .FirstTitlePDiv {
+    align-self: flex-start;
+    margin-left: 167px;
+  }
+  .FirstTitle {
+    text-align: start;
+    align-self: flex-start;
+    margin-bottom: 18px;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -1px;
+  }
+  .FirstP {
+    text-align: start;
+    max-width: 440px;
+  }
+  .formDiv {
+    margin-right: 165px;
+    transform: translate(338px, -225px);
+    z-index: 10;
+  }
+  .CurveBottomRight {
+    display: block;
+    position: absolute;
+    left: 0px;
+    transform: translate(0px, 756px);
+    max-width: 1000px;
+  }
+  .Lines {
+    display: block;
+    position: absolute;
+    transform: translate(0px, 861px);
+  }
+  .InfoDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .SeventhDiv {
+    margin-top: -186px;
+  }
+  .SecondLogo {
+    margin-bottom: 0px;
+  }
+  .FirstSmallInfoDiv {
+    margin-right: 124px;
+    margin-bottom: 0px;
+  }
+}
