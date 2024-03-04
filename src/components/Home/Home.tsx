@@ -20,9 +20,12 @@ import SecondLine from "/src/assets/icons/icon-minus.svg";
 import CurveTopRight from "/src/assets/patterns/pattern-curve-top-right.svg";
 import CurveTopLeft from "/src/assets/patterns/pattern-curve-top-left.svg";
 import Lines from "/src/assets/patterns/pattern-lines.svg";
-import { useState, useRef } from "react";
+import { useState, useRef, MouseEventHandler } from "react";
 
-function Home(props) {
+function Home(props:{
+  isClicked:string;
+  setIsClicked:MouseEventHandler<HTMLButtonElement>;
+}) {
   const [classChanger, setClassChanger] = useState<number | null>(1);
   const Positions = useRef<HTMLImageElement>(null);
 

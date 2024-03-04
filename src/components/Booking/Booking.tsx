@@ -5,7 +5,6 @@ import Minus from "/src/assets/icons/icon-minus.svg";
 import Plus from "/src/assets/icons/icon-plus.svg";
 import CurveBottomRight from "/src/assets/patterns/pattern-curve-bottom-right.svg";
 import Lines from "/src/assets/patterns/pattern-lines.svg";
-import Check from "/src/assets/icons/icon-check.svg";
 import { z, ZodType } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -21,7 +20,9 @@ type FormData = {
   hours: number;
 };
 
-function Booking(props) {
+function Booking(props:{
+  isClicked:string;
+}) {
   const [rotate, setRotate] = useState(false);
   const [quantity, setQuantity] = useState(4);
 
