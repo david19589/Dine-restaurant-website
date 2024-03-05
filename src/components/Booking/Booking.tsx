@@ -20,14 +20,16 @@ type FormData = {
   hours: number;
 };
 
-function Booking(props:{
-  isClicked:boolean;
-}) {
+function Booking(props: { isClicked: boolean }) {
   const [rotate, setRotate] = useState(false);
   const [quantity, setQuantity] = useState(4);
 
   const schema: ZodType<FormData> = z.object({
-    name: z.string().min(1).max(30),
+    name: z
+      .string()
+      .min(1)
+      .max(30)
+      .regex(/^[A-Za-z]+$/),
     email: z.string().email().max(40),
     mm: z.number(),
     dd: z.number(),

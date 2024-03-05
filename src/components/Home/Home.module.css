@@ -274,12 +274,6 @@
   padding-top: 80px;
   padding-bottom: 124px;
 }
-.Img6 {
-  margin-bottom: 49px;
-  width: 88%;
-  max-width: 300px;
-  box-shadow: 1px 30px 30px -7px rgba(0, 0, 0, 0.26);
-}
 .EighthTitle {
   font-weight: 700;
   font-size: 32px;
@@ -289,7 +283,6 @@
   margin-top: 27px;
   color: #000;
   text-align: center;
-  max-width: 240px;
 }
 .EighthP {
   font-weight: 400;
@@ -299,7 +292,6 @@
   max-width: 320px;
   color: #000;
   text-align: center;
-  transition: 0.3s ease-in-out;
   height: 90px;
 }
 .EighthTitlePDiv {
@@ -379,17 +371,21 @@
   height: 1px;
   position: absolute;
   transform: translate(0px, 27px);
-  transition: 0.3s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 .SecondLineActiveOne {
+  width: 48px;
+  height: 1px;
   position: absolute;
   transform: translate(0px, 75px);
-  transition: 0.3s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 .SecondLineActiveTwo {
+  width: 48px;
+  height: 1px;
   position: absolute;
   transform: translate(0px, 115px);
-  transition: 0.3s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 .SixthDiv {
   display: flex;
@@ -489,6 +485,62 @@
   flex-direction: column;
   align-items: center;
 }
+.ImgSlide1 {
+  background-image: url(/src/assets/homepage/family-gathering-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+.ImgSlide2 {
+  background-image: url(/src/assets/homepage/special-events-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+.ImgSlide3 {
+  background-image: url(/src/assets/homepage/social-events-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+.slides {
+  width: 88%;
+  max-width: 326px;
+  height: 400px;
+  margin-bottom: 49px;
+  box-shadow: 1px 30px 30px -7px rgba(0, 0, 0, 0.26);
+  overflow: hidden;
+  z-index: 1;
+}
+.ImgList {
+  width: 100%;
+  overflow: hidden;
+  padding-inline-start: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  transition: 0.8s ease-in-out;
+}
+.ImgList2 {
+  width: 100%;
+  overflow: hidden;
+  padding-inline-start: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  transform: translateY(-400px);
+  transition: 0.8s ease-in-out;
+}
+.ImgList3 {
+  width: 100%;
+  overflow: hidden;
+  padding-inline-start: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  transform: translateY(-800px);
+  transition: 0.8s ease-in-out;
+}
 .Img1Tablet {
   display: none;
 }
@@ -508,12 +560,6 @@
   display: none;
 }
 .Img5Tablet {
-  display: none;
-}
-.Img6Tablet {
-  display: none;
-}
-.Img6Desktop {
   display: none;
 }
 .ThirdLine {
@@ -683,14 +729,29 @@
     height: 1px;
     transform: translate(-45px, 10px);
   }
-  .Img6 {
-    display: none;
+  .ImgSlide1 {
+    background-image: url(/src/assets/homepage/family-gathering-tablet.jpg);
+    height: 360px;
   }
-  .Img6Tablet {
-    display: block;
-    margin-bottom: 57px;
-    box-shadow: 1px 30px 30px -7px rgba(0, 0, 0, 0.26);
-    z-index: 1;
+  .ImgSlide2 {
+    background-image: url(/src/assets/homepage/special-events-tablet.jpg);
+    height: 360px;
+  }
+  .ImgSlide3 {
+    background-image: url(/src/assets/homepage/social-events-tablet.jpg);
+    height: 360px;
+  }
+  .slides {
+    width: 88%;
+    max-width: 573px;
+    height: 360px;
+    margin-bottom: 53px;
+  }
+  .ImgList2 {
+    transform: translateY(-360px);
+  }
+  .ImgList3 {
+    transform: translateY(-720px);
   }
   .FifthDiv {
     padding-top: 120px;
@@ -717,7 +778,6 @@
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -0.5px;
-    max-width: 360px;
   }
   .EighthP {
     font-size: 20px;
@@ -830,9 +890,6 @@
   .Img2Tablet {
     display: none;
   }
-  .Img6Tablet {
-    display: none;
-  }
   .SecondDiv {
     display: flex;
     flex-direction: row;
@@ -922,10 +979,29 @@
     display: flex;
     flex-direction: row;
   }
-  .Img6Desktop {
-    display: block;
-    box-shadow: 1px 30px 30px -7px rgba(0, 0, 0, 0.26);
-    z-index: 1;
+  .ImgSlide1 {
+    background-image: url(/src/assets/homepage/family-gathering-desktop.jpg);
+    height: 600px;
+  }
+  .ImgSlide2 {
+    background-image: url(/src/assets/homepage/special-events-desktop.jpg);
+    height: 600px;
+  }
+  .ImgSlide3 {
+    background-image: url(/src/assets/homepage/social-events-desktop.jpg);
+    height: 600px;
+  }
+  .slides {
+    width: 88%;
+    max-width: 540px;
+    height: 600px;
+    margin-bottom: 53px;
+  }
+  .ImgList2 {
+    transform: translateY(-600px);
+  }
+  .ImgList3 {
+    transform: translateY(-1200px);
   }
   .EighthTitlePDiv {
     display: flex;
@@ -962,10 +1038,12 @@
   .SecondLineActiveOne {
     position: absolute;
     transform: translate(-135px, 56px);
+    width: 95px;
   }
   .SecondLineActiveTwo {
     position: absolute;
     transform: translate(-135px, 100px);
+    width: 95px;
   }
   .SixthDiv {
     display: flex;
